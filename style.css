@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Popins',sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.introduce-content h1{
+    font-family: Genereal Sans;
+    letter-spacing: -0.02em;
+    font-size: 62px;
+    color:#011632;
+}
+.header-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    list-style: none;
+    display:flex;
+}
+.nav ul li{
+    margin: 0 15px;
+}
+.nav a{
+    text-decoration: none;
+    color:#011632;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin: 25px;
+}
+.header-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+button{
+    background-color: #1376F8;
+    border:none;
+    border-radius: 5px;
+    font-weight: 550;
+    color:#fff;
+    padding: 15px 25px;
+}
+.introduce{
+  padding-top:40px ;
+}
+.containers{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.introduce-content{
+    padding-top:50px;
+}
+.greetings{
+    width: 800px;
+    height: 148px;
+}
+.greetings h1{
+    z-index: 1;
+    font-size: 56px;
+    font-family: 'Montserrat',sans-serif;
+}
+.greetings img{
+    position: absolute;
+    margin-top: -12px;
+    margin-left:135px;
+    z-index: -1;
+}
+.info{
+    padding-top: 10px;
+    width: 531px;
+    height: 84px;
+}
+.info p{
+    color:#3C4959;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+.appointment-buttons{
+    align-items: center;
+    display: flex;
+    gap:15px;
+    width: 554px;
+    height: 55px;
+    padding-top: 50px;
+}
+.emergency_info{
+    display: flex;
+    flex-direction: column;
+}
+.appointment-buttons img{
+    border:#1376F8 solid 1px;
+    border-radius: 8px;
+    padding: 8.5px 15px;
+}
+.emergency_info span{
+    color:#1376F8;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 550;
+    line-height: 25px;
+    
+}
+.emergency_info a{
+    text-decoration: none;
+    color:#011632;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.person{
+    align-items: center;
+    display: flex;
+    width:374px;
+    height: 117px;
+    padding-top: 75px;
+    gap:15px;
+}
+.person-info{
+    padding-top: 15px;
+}
+.img{
+    margin-right: 100px;
+}
