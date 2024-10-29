@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general-sans.css">
     <link rel="icon" href="./images/Icon.jpg" type="image/jpg">
     <title>Uifry</title>
 </head>
@@ -12,7 +13,7 @@
         <div class="container">
             <div class="header-top">
                 <div class="logo">
-                    <img src="./images/logo.jpg" alt="Uifry Logo">
+                    <img id="a" src="./images/svg_items/Group 1.svg" alt="Uifry Logo">
                 </div>
                 <nav class="nav">
                     <ul>
@@ -24,7 +25,7 @@
                     </ul>
                 </nav>
                 <div class="header-button">
-                    <img src="./images/2.jpg" alt="photo">
+                    <img id="elipse" src="./images/elipse.png" width="55" height="55" alt="photo">
                     <button type="button">Book Now</button>
                 </div>
             </div>
@@ -49,18 +50,146 @@
                             <a href="tel:090076401">0900-76401</a>
                         </div>
                     </div>
-                    <div class="person">
-                        <img src="./images/person.jpg" alt="Thomas Daniel">
-                        <p>Thomas daniel<br>
-                            Sr Dental</p>
-                        <img src="./images/3.jpg" alt="icon">
-                    </div>
-                    <div class="person-info">
-                        <p>Top Quality dental treatment done by foeld experts, Highly Recommended for everyone</p>
+                    <div class="profile-box">
+                        <div class="profile-card">
+                            <img src="./images/person.jpg" alt="Profile Photo" class="profile-image">
+                            <div class="profile-info">
+                                <h3>Thomas Daniel</h3>
+                                <p>Sr Dental</p>
+                            </div>
+                            <a href="#" class="linkedin-icon">in</a>
+                        </div>
+                        <div class="card-info">
+                            <p>Top Quality dental treatment done by field experts, Highly Recommended for everyone</p>
+                        </div>
                     </div>
                 </div>
                 <div class="main-image">
-                    <img src="./images/doctor.jpg" alt="Doctor">
+                    <img id="doc" src="./images/doctor.jpg" width="675" height="676" alt="Doctor">
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services-box">
+                    <div class="services-item">
+                        <div class="icon-box">
+                            <svg class="icon" width="50" height="50">
+                                <use href="./images/svg_items/symbol-defs.svg#icon-Teeth"></use>
+                            </svg>
+                        </div>
+                        <h4>Root Canal Treatment</h4>
+                        <p>Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.</p>
+                        <div class="learn-info">
+                            <a href="">Learn more</a>
+                            <img src="./images/arrow.jpg">
+                        </div>
+                    </div>
+                    <div class="services-item">
+                        <div class="icon-box">
+                            <svg class="icon" width="48" height="48">
+                                <use href="./images/svg_items/symbol-defs1.svg#icon-smile"></use>
+                            </svg>
+                        </div>
+                        <h4>Cosmetic Dentist</h4>
+                        <p>Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile.</p>
+                        <div class="learn-info">
+                            <a href="#">Learn more</a>
+                            <img src="./images/arrow.jpg">
+                        </div>
+                    </div>
+                    <div class="services-item">
+                        <div class="icon-box">
+                            <svg class="icon" width="48" height="48">
+                                <use href="./images/svg_items/symbol-defs1.svg#icon-implant"></use>
+                            </svg>
+                        </div>
+                        <h4>Dental Implants</h4>
+                        <p>A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge.</p>
+                        <div class="learn-info">
+                            <a href="#">Learn more</a>
+                            <img src="./images/arrow.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invites">
+            <div class="container">
+                <div class="invite-box">
+                    <div class="invite">
+                        <h2>We’re welcoming new patients and can’t wait to meet you.</h2>
+                        <p>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+                        <div class="submit-box">
+                            <form>
+                                <input type="tel" name="phone" placeholder="Enter your Phone Number" required>
+                                <button id="sub-button"type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="second-image">
+                        <img src="./images/second-image.jpg" width="413" height="362" alt="second-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages-box">
+                    <div class="third-image">
+                        <img src="./images/third-image.jpg" width="414" height="444" alt="third-image">                   
+                    </div>
+                    <div class="advantage-info">
+                        <div class="advantages-info-box">
+                        <div class="advantages-header">
+                            <h2>Why choose Smile for all your dental treatments?</h2>
+                        </div>
+                        <div class="advantages-info1">
+                            <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                        </div>
+                        <div class="advantages-list-box">
+                            <ul class="advantages-list">
+                                <li>Top quality dental team</li>
+                                <li>State of the art dental services</li>
+                                <li>Discount on all dental treatment</li>
+                                <li>Enrollment is quick and easy</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <button id="app-button" type="button">Book an appointment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block1">
+            <div class="container">
+                <div class="box">
+                    <div class="left-box">
+                        <div class="header-box">
+                            <h2>Leave your worries at the door and enjoy a Healthier, more precise smile</h2>
+                            <p>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+                        </div>
+                        <button id="app-button">Book an appointment</button>
+                    </div>
+                    <div class="second-image">
+                        <img src="./images/smile-image.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-block">
+            <div class="container">
+                <div class="video-box">
+                    <div class="text-box">
+                        <h2>We’re welcoming new patients and can’t wait to meet you.</h2>
+                    </div>
+                    <div class="text-block">
+                        <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                    </div>
+                    <div class="video">
+                        <iframe width="1064" height="455" src="https://www.youtube.com/embed/LXX5nJqrBFk?si=owNfU2Lw1P7Ww0jR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://www.youtube.com/@DoctorMike"><button type="button">Watch Playlist</button></a>
                 </div>
             </div>
         </section>
