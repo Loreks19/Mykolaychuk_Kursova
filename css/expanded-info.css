@@ -1,0 +1,119 @@
+/* Базовий стиль для списку */
+.questions{
+    padding-bottom:100px;
+}
+.faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top:50px;
+}
+
+/* Стиль кожного пункту FAQ */
+.faq-item {
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #CFCFCF;
+     /* Чорна лінія між елементами */
+}
+.faq-item:last-child{
+    border-bottom: none;
+}
+/* Питання */
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+    position: relative;
+}
+
+/* Додаємо крапку перед питанням і вирівнюємо текст */
+.question .title {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    margin: 0;
+}
+.title{
+    font-family: 'GeneralSans-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+}
+/* Крапка перед питанням */
+.question .title::before {
+    content: "•";
+    color: var(--dark-blue-design);
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+/* Активний стан питання */
+.faq-item.active .question {
+    background-color: #007bff; /* Синій фон при активності */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+    padding-left: 20px; /* Відступ для візуальної відповідності */
+}
+
+/* Крапка змінює колір на білий при активності */
+.faq-item.active .question .title::before {
+    color: #fff;
+}
+
+/* Додаємо білу лінію під активним питанням */
+.faq-item.active .question::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+/* Значок розгортання */
+.expand-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+    fill: currentColor;
+}
+
+.faq-item.active .expand-icon {
+    transform: rotate(45deg); /* Повертає "+" на "x" */
+}
+
+/* Відповідь */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #e9ecef;
+}
+
+.faq-item.active .answer {
+    max-height: 300px; /* Достатньо для показу тексту */
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.hidden-content {
+    margin: 0;
+    font-size: 0.9em;
+    color: #fff;
+}

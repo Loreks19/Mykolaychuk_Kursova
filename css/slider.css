@@ -19,7 +19,7 @@
 .prev-button,
 .next-button{
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 0px 25px;
     background-color: white;
     color:black;
     font-size: 18px;

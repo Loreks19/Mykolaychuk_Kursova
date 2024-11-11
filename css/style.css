@@ -9,12 +9,19 @@
     --light-blue-design: #e6f6fe;
     --mid-blue-design: #1376f8;
     --success: #17bf28;
-    --secondary-color: white;
+    --secondary-color: #FFFFFF;
     --sky-blue-design: #25b4f8;
     --body-text: #3c4959;
+    --stars-color: #EC942C;
 }
 body{
-    font-family: 'Popins',sans-serif;
+    color:var(--body-text);
+    font-family: 'GeneralSans-Regular';
+    font-weight: 400;
+    font-size:18px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
 }
 .container{
     max-width: 1400px;
@@ -57,6 +64,12 @@ body{
     letter-spacing: 0.015em;
     line-height: 1.5;
     font-style: normal;
+    display: inline-block; /* Потрібно для того, щоб анімація працювала */
+    transition: transform 0.3s ease;
+}
+.nav a:hover{
+    transform: translateY(-5px);
+    color:var(--mid-blue-design);
 }
 .header-button{
     display: flex;
@@ -72,6 +85,7 @@ button{
     color:#fff;
     padding: 15px 25px;
 }
+
 .introduce{
   padding-top:40px ;
 }
@@ -235,9 +249,13 @@ button{
     gap:35px;
 }
 #doc{
+    display: block;
     position: relative;
     bottom:-5px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .services-item{
     width: 400px;
     height: 300px;
@@ -346,8 +364,10 @@ button{
     display: flex;
     flex-direction: column;
     padding:30px;
-    gap:20px;
     width:650px;
+}
+.invite p{
+    margin-bottom:30px;
 }
 .invite-box{
     display: flex;
@@ -376,7 +396,7 @@ button{
     line-height: 1.5;
     list-style: none;
     padding-left: 30px;
-    background-image: url(./images/Shield-Done.png);
+    background-image: url(/images/Shield-Done.png);
     background-repeat: no-repeat;
     background-position: left center;
     margin-bottom:10px;
@@ -393,24 +413,13 @@ button{
 .advantages-info-box{
     display:flex;
     flex-direction: column;
-    gap:35px;
-    padding-bottom:35px;
+    margin-bottom:30px;
 }
-.advantages-header h2{
-    color: var(--dark-blue-design);
-    font-family: 'GeneralSans-Semibold';
-    font-size:40px;
-    font-weight: 600;
-    line-height: 1.2;
+.advantages-info-box p{
+    margin-bottom:30px;
 }
-.advantages-info1 p{
-    color:var(--body-text);
-    font-family: 'GeneralSans-Regular';
-    font-size:18px;
-    font-weight: 400;
-    letter-spacing: 0.015em;
-    line-height: 1.5;
-}
+
+
 .advantage-info{
     width:522px;
 }
@@ -426,7 +435,7 @@ button{
 .left-box{
     width:555px;
 }
-h2{
+#center-h{
     margin-left: auto;
     margin-right: auto;
     max-width: 629px;
@@ -436,7 +445,22 @@ h2{
     font-size:42px;
     font-weight: 600;
     line-height: 1.2;
+}
+h2{
+    color: var(--dark-blue-design);
+    font-family: 'GeneralSans-Semibold';
+    font-size:40px;
+    font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 20px;
+}
+.p{
+    color:var(--body-text);
+    font-family: 'GeneralSans-Regular';
+    font-size:18px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
 }
 .header-box p{
     color:var(--body-text);
@@ -447,14 +471,13 @@ h2{
     line-height: 1.5;
 }
 .video-block{
-    padding-top:60px;
-    padding-bottom: 60px;
+    padding-top:100px;
+    padding-bottom: 100px;
 }
 .header-box{
     display:flex;
     flex-direction: column;
-    gap:30px;
-    padding-bottom:30px;
+    margin-bottom:30px;
 }
 .video-box{
     display: flex;
@@ -468,7 +491,19 @@ h2{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-p{
+#center-p-b2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 479px;
+    color:var(--body-text);
+    font-family: 'GeneralSans-Regular';
+    font-size:16px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+}
+#center-p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -479,4 +514,117 @@ p{
     font-weight: 400;
     letter-spacing: 0.015em;
     line-height: 1.5;
+}
+.last-block{
+    padding-bottom:90px;
+}
+.review-box{
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+.promo-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a1a2f; /* Темно-синій фон */
+    border-radius: 10px;
+    padding: 30px;
+    width:1064px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Контент блоку */
+.promo-content {
+    max-width: 60%;
+}
+.promo-content p{
+    padding-bottom:20px;
+}
+
+.promo-content h2 {
+    font-family: 'GeneralSans-Semibold';
+    font-size:42px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color:var(--secondary-color);
+}
+
+.promo-content p {
+    font-family:'GeneralSans-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+    margin-bottom: 20px;
+    color: var(--secondary-color); /* Світло-сірий текст */
+}
+
+/* Блок зображення */
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav-footer ul{
+    list-style: none;
+    display:flex;
+}
+.nav-footer ul li{
+    margin: 0 15px;
+}
+.nav-footer a{
+    text-decoration: none;
+    font-size:16px;
+    color:var(--dark-blue-design);
+    font-weight: 500;
+    font-family: 'GeneralSans-Medium';
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-style: normal;
+    display: inline-block; /* Потрібно для того, щоб анімація працювала */
+    transition: transform 0.3s ease;
+}
+.nav-footer a:hover{
+    color: var(--mid-blue-design);
+    transform: translateY(-5px);
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.white-line{
+    color:var(--dark-blue-design);
+}
+.line {
+    margin-top:10px;
+    margin-bottom: 15px;
+    height: 3px;
+    background-color: black;
+    width: 100%; /* або вказати бажану ширину */
+  }
+.social-icons p{
+    font-family: 'GeneralSans-Regular';
+    font-size:14px;
+    font-weight: 400;
+    letter-spacing: 0.020em;
+    line-height: 1.5;
+}
+.social-icon{
+    width:40px;
+    height:40px;
+    margin-bottom:20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
 }

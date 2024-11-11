@@ -1,12 +1,6 @@
 const images = [
-    'First_photo.jpg', 'Second_photo.jpg', 'Third_photo.jpg', 'Fourth_photo.jpg'
+    'First-photo.jpg', 'Second-photo.jpg', 'Third-photo.jpg', 'Fourth-photo.jpg'
 ];
-const info = [
-    {name: 'Jim Carry', role: 'Orthodontist.'},
-    {name: 'Wade Warren', role: 'Endodontist.'},
-    {name: 'Jeny Wilson', role: 'Periodontist.'},
-    {name: 'Jacob Jones', role: 'Pediatric Dentist.'}
-]
 
 let activeImage = 0;
 const sliderPlace = document.querySelector('.slider-line');
@@ -23,6 +17,7 @@ const initSlider = () => {
     sliderPlace.append(img);
     nextImageGenerate();
     prevImageGenerate();
+    
 }
 
 const nextImageGenerate = () => {
@@ -98,3 +93,4 @@ const animate = ({duration, draw, removeElement}) => {
         }
     });
 }
+

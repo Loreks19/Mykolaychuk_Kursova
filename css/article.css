@@ -1,0 +1,74 @@
+.article-but{
+    display: block;
+    margin-left: auto;
+}
+.article-box{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.article-list li{
+    list-style: none;
+}
+
+.article-list .article-item{
+    background-color: #e6f6fe;
+    padding: 20px; /* Внутрішні відступи для всіх елементів */
+    border-radius: 8px; /* Задаємо заокруглення для кращого вигляду */
+    box-sizing: border-box; /* Враховує padding у загальній ширині */
+    height: 452px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.article-list .article-item:hover {
+    transform: scale(1.05); /* Збільшує розмір елемента на 5% при наведенні */
+}
+.article-item img{
+    margin-bottom:20px;
+    border-radius: 10px;
+}
+.article-item a{
+    font-family: 'GeneralSans-Medium';
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    background-color: #011632;
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+}
+#introduce{
+    font-family: 'GeneralSans-Medium';
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-size:18px;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+#name{
+    font-family: 'GeneralSans-Regular';
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-size:16px;
+    text-align: right;
+}
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    row-gap: 30px; /* space between the grid items */
+    column-gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.center-but{
+    margin-top:15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news{
+    padding-bottom:100px;
+}

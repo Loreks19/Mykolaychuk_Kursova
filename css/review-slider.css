@@ -1,0 +1,64 @@
+.swiper {
+    height: 325px;
+}
+.slider-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top:30px;
+}
+.arrows{
+    fill:currentColor;
+}
+.s-button-prev,
+.s-button-next{
+    padding: 8px 20px;
+    cursor: pointer;
+    color:white;
+    background-color: var(--dark-blue-design);
+}
+.slider-box{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.card-list .card-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Внутрішні відступи для всіх елементів */
+    border-radius: 8px; /* Задаємо заокруглення для кращого вигляду */
+    background-color: #FFF;
+    box-sizing: border-box; /* Враховує padding у загальній ширині */
+}
+.card-list li{
+    list-style: none;
+}
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background-color: #FFF;
+    text-decoration: none;
+}
+.profile{
+    display: flex;
+    justify-content: left;
+    gap:10px;
+    margin-bottom:10px;
+}
+h3{
+    color: var(--dark-blue-design);
+}
+.stars{
+    color:var(--stars-color);
+}
+.card-item p{
+    color:var(--body-text);
+    font-family: 'GeneralSans-Regular';
+    font-style: normal;
+    font-size:16px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+}

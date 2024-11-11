@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/general-sans.css">
-    <link rel="icon" href="./images/Icon.jpg" type="image/jpg">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/review-slider.css">
+    <link rel="stylesheet" href="./css/article.css">
+    <link rel="stylesheet" href="./css/expanded-info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="./images/Icon.jpg" type="image/jpg">
     <title>Uifry</title>
 </head>
 <body>
@@ -65,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-image">
+                <div class="image-container">
                     <img id="doc" src="./images/doctor.jpg" width="675" height="676" alt="Doctor">
                 </div>
             </div>
@@ -142,12 +146,8 @@
                     </div>
                     <div class="advantage-info">
                         <div class="advantages-info-box">
-                        <div class="advantages-header">
                             <h2>Why choose Smile for all your dental treatments?</h2>
-                        </div>
-                        <div class="advantages-info1">
                             <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
-                        </div>
                         <div class="advantages-list-box">
                             <ul class="advantages-list">
                                 <li>Top quality dental team</li>
@@ -181,8 +181,8 @@
         <section class="video-block">
             <div class="container">
                 <div class="video-box">
-                        <h2>We’re welcoming new patients and can’t wait to meet you.</h2>
-                        <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                        <h2 id="center-h">We’re welcoming new patients and can’t wait to meet you.</h2>
+                        <p id="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                     <div class="video">
                         <iframe width="1064" height="452" src="https://www.youtube.com/embed/LXX5nJqrBFk?si=owNfU2Lw1P7Ww0jR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -192,18 +192,285 @@
         </section>
         <section class="team-block">
             <div class="container">
-                <h2>Meet our specialists</h2>
-                <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <h2 id="center-h">Meet our specialists</h2>
+                <p id="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 <div class="slider">
                     <div class="slider-line"></div>
                 </div>
                 <div class="slider-button">
-                    <button class="prev-button">&lt;</button>
-                    <button class="next-button">&gt;</button>
+                    <button class="prev-button">
+                        <svg class="arrows" width="40" height="40">
+                            <use href="./images/svg_items/social-defs.svg#icon-Arrow-Left"></use>
+                        </svg>
+                    </button>
+                    <button class="next-button">
+                        <svg class="arrows"  width="40" height="40">
+                            <use href="./images/svg_items/social-defs.svg#icon-Arrow-Right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="review-box">
+            <div class="container">
+                <h2 id="center-h">Our Happy Clients</h2>
+                <p id="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <div class="slider-box">
+                <div class="slider-container swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <div class="profile">
+                                        <img src="./images/Thomas.jpg" width="70" height="70" alt="Thomas Daniel" class="profile-img">
+                                    <div class="review-content">
+                                        <h3 class="reviewer-name">Thomas Daniel</h3>
+                                        <div class="stars" aria-label="5 out of 5 stars">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <p class="review-text">Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <div class="profile">
+                                        <img src="./images/Alena.jpg" width="70" height="70" alt="Alena Alex" class="profile-img">
+                                    <div class="review-content">
+                                        <h3 class="reviewer-name">Alena Alex</h3>
+                                        <div class="stars" aria-label="5 out of 5 stars">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <p class="review-text">Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <div class="profile">
+                                        <img src="./images/Thomas-Ed.jpg" width="70" height="70" alt="Thomas Edison" class="profile-img">
+                                    <div class="review-content">
+                                        <h3 class="reviewer-name">Thomas Edison</h3>
+                                        <div class="stars" aria-label="5 out of 5 stars">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <p class="review-text">Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <div class="profile">
+                                        <img src="./images/elipse.png" width="70" height="70" alt="Thomas Edison" class="profile-img">
+                                    <div class="review-content">
+                                        <h3 class="reviewer-name">John Edison</h3>
+                                        <div class="stars" aria-label="5 out of 5 stars">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <p class="review-text">Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="slider-buttons">
+                            <div class="s-button-prev">
+                                <svg class="arrows" width="40" height="20">
+                                    <use href="./images/svg_items/social-defs.svg#icon-Arrow-Left"></use>
+                                </svg>
+                            </div>
+                            <div class="s-button-next">
+                                <svg class="arrows"  width="40" height="20">
+                                    <use href="./images/svg_items/social-defs.svg#icon-Arrow-Right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2>News & Article</h2>
+                <p>We use only the best quality materials on the market in<br> order to provide the best products to our patients.</p>
+                <button class="article-but" type="button">View all</button>
+                <div class="article-box">
+                    <ul class="article-list">
+                        <li class="article-item">
+                            <img src="./images/1.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/2-2.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/3-3.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/4.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/5.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/6.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/7.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                        <li class="article-item">
+                            <img src="./images/8.jpg" alt="photo">
+                            <a href="#">Self Care</a>
+                            <p id="introduce">Care of your Teeth</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p id="name">~Anita Jackson</p>
+                        </li>
+                    </ul>
+                </div>
+                <button class="center-but" type="button">Check out more</button>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2 id="center-h">Frequently Ask Question</h2>
+                <p id="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <div class="question">
+                            <p class="title">Can I see who reads my email campaigns?</p>
+                            <svg class="expand-icon">
+                                <use href="./images/svg_items/expand.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p class="hidden-content">Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="question">
+                            <p class="title">Do you offer non-profit discounts?</p>
+                            <svg class="expand-icon">
+                                <use href="./images/svg_items/expand.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p class="hidden-content">Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="question">
+                            <p class="title">Can I see who reads my email campaigns?</p>
+                            <svg class="expand-icon">
+                                <use href="./images/svg_items/expand.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p class="hidden-content">Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="question">
+                            <p class="title">Can I see who reads my email campaigns?</p>
+                            <svg class="expand-icon">
+                                <use href="./images/svg_items/expand.svg#icon-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="answer">
+                            <p class="hidden-content">Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="last-block">
+            <div class="container">
+                <div class="promo-block">
+                    <div class="promo-content">
+                        <h2>Dental Website That's Gonna Shake The Game Rules Up.</h2>
+                        <p>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                        <button class="learn-more-button">Learn More</button>
+                    </div>
+                    <div class="promo-image">
+                        <img src="./images/last-image.jpg" width="305" height="292" alt="Dental image">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-box">
+                <div class="logo">
+                    <img id="a"src="./images/logo.jpg">
+                </div>
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="line"></div>
+            <div class="social-icons">
+                <p>All rights reserved ® uifry.com  | Terms and conditions apply!</p>
+                <div class="social-icons-box">
+                    <svg class="social-icon">
+                        <use href="./images/svg_items/social-defs.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="social-icon">
+                        <use href="./images/svg_items/social-defs.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="social-icon">
+                        <use href="./images/svg_items/social-defs.svg#icon-youtube"></use>
+                    </svg>
+                    <svg class="social-icon">
+                        <use href="./images/svg_items/social-defs.svg#icon-linkedin"></use>
+                    </svg>
+                    <svg class="social-icon">
+                        <use href="./images/svg_items/social-defs.svg#icon-twitter"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
 </body>
 </html>
