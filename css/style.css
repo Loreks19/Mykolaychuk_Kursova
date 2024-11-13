@@ -85,7 +85,9 @@ button{
     color:#fff;
     padding: 15px 25px;
 }
-
+.burger-icon{
+    display: none;
+}
 .introduce{
   padding-top:40px ;
 }
@@ -565,7 +567,7 @@ h2{
 .promo-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .nav-footer ul{
@@ -628,3 +630,8 @@ h2{
     align-items: center;
     gap:15px;
 }
+
+
+/* 1024 */
+
+/* 1440 */

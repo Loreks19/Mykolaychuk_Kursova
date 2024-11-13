@@ -14,6 +14,7 @@
 .slider img{
     max-width: 305px;
     width: 100%;
+    border-radius: 10px;
 }
     
 .prev-button,

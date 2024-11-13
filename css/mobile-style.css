@@ -1,0 +1,76 @@
+:root {
+    --dark-blue-design: #011632;
+    --light-blue-design: #e6f6fe;
+    --mid-blue-design: #1376f8;
+    --success: #17bf28;
+    --secondary-color: #FFFFFF;
+    --sky-blue-design: #25b4f8;
+    --body-text: #3c4959;
+    --stars-color: #EC942C;
+}
+@media(max-width: 430px) {
+    .containers {
+        display: block;
+    }
+    .header-top nav ul{
+        display: none;
+    }
+    .header-button button .burger-icon{
+        display: inline;
+    }
+    .header-button button{
+        font-size:0px;
+    }
+    .header-top{
+        width: 100vw;
+        margin-left: calc(-50vw + 50%); /* Вирівнює по центру */
+        padding: 10px 25px; /* Падінги залишаються */
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 100%;
+        margin:0;
+    }
+    #elipse{
+        display: none;
+    }
+    .article-box{
+        display: block;
+    }
+    .article-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-list .aticle-item img{
+        width: 100%;
+    }
+    .promo-block{
+        display: block;
+        max-width: 100%;
+        padding:0;
+        padding-top:50px;
+    }
+    .promo-image{
+        display: flex;
+        justify-content: center;
+    }
+    .promo-image img{
+        width:100%;
+    }
+    .promo-content{
+        max-width: 100%;
+    }
+    .promo-content button{
+        margin-bottom: 30px;
+    }
+    .promo-content h2{
+        font-size:36px;
+        font-weight: 600;
+    }
+    .slider{
+        overflow: hidden;
+    }
+    .last-block{
+        background-color: var(--dark-blue-design);
+    }
+}
