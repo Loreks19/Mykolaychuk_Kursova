@@ -37,6 +37,10 @@
         max-width: 100%;
         height: auto;
     }
+    .info{
+        max-width: 100%;
+        margin-bottom:20px;
+    }
     .greetings h1{
         font-family: 'GeneralSans-Semibold';
         font-weight: 600;
@@ -112,6 +116,12 @@
     .submit-box{
         max-width: 100%;
     }
+    .card-info{
+        max-width: 100%;
+    }
+    .slider img{
+        max-width: 100%;
+    }
     .invite{
         padding:0;
         max-width: 100%;
@@ -124,6 +134,7 @@
     .third-image{
         max-width: 100%;
         margin-top:30px;
+        margin-bottom: 80px;
     }
     .advantages{
         background-color: var(--light-blue-design);
@@ -137,8 +148,42 @@
         max-width: 100%;
     }
     .advantages-info-box{
-        
+        margin-top:80px;
     }
+    h2{
+        font-size:36px;
+        font-weight: 600;
+        line-height: 1.2;
+        font-family: 'GeneralSans-Semibold';
+        text-transform: capitalize;
+
+    }
+    #center-h{
+        font-size:36px;
+        font-weight: 600;
+        line-height: 1.2;
+        font-family: 'GeneralSans-Semibold';
+        margin:0;
+        text-align: start;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    #center-p{
+        margin:0;
+        text-align: start;
+    }
+
+    .video iframe{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .box{
+        display: block;
+    }
+    .left-box{
+        max-width: 100%;
+    }
+
     .services{
         background-color: var(--light-blue-design);
     }
@@ -161,12 +206,18 @@
     }
     .article-box{
         display: block;
+
     }
+
     .article-list{
         display: flex;
         flex-direction: column;
     }
-    .article-list .aticle-item img{
+    .article-list .article-item{
+        max-width: 100%;
+        height: auto;
+    }
+    .article-item img{
         width: 100%;
     }
     .promo-block{
@@ -194,8 +245,44 @@
     }
     .slider{
         overflow: hidden;
+        max-width: 100%;
+    }
+    .slider img{
+        width: 100%;
     }
     .last-block{
         background-color: var(--dark-blue-design);
+    }
+    .slider-box{
+        display: block;
+    }
+    .slider-buttons{
+        margin-top:0;
+    }
+    #center-p-b2{
+        text-align: start;
+        margin:0;
+    }
+    .article-but{
+        display: none;
+    }
+    .nav-footer{
+        display: none;
+    }
+    .social-icons{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .social-icons-box{
+        width: 100%;
+        gap:30px;
+    }
+    .burger-but{
+        display:block;
+        background-color: transparent;
+    }
+    .footer-box{
+        align-items: center;
     }
 }

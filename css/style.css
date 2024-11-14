@@ -639,7 +639,9 @@ h2{
     align-items: center;
     gap:15px;
 }
-
+.burger-but{
+    display: none;
+}
 
 /* 1024 */
 
