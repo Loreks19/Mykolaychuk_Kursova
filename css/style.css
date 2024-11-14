@@ -31,7 +31,7 @@ body{
     padding-right: 15px;
 }
 .introduce-content h1{
-    font-family: Genereal Sans;
+    font-family: 'GeneralSans-Semibold';
     letter-spacing: -0.02em;
     font-size: 62px;
     color: var(--dark-blue-design);
@@ -102,11 +102,14 @@ button{
     
 }
 .introduce-content{
-    padding-top:50px;
+    padding-top:30px;
 }
 .greetings{
     width: 687px;
     height: 148px;
+}
+.logo{
+    margin-top: 10px;
 }
 .greetings h1{
     z-index: 1;
@@ -116,7 +119,7 @@ button{
     letter-spacing: -0.02em;
     font-family: 'GeneralSans-Semibold';
 }
-.greetings img{
+.greetings .normal-line{
     position: absolute;
     margin-top: -12px;
     margin-left:135px;
@@ -126,6 +129,12 @@ button{
     padding-top: 10px;
     width: 531px;
     height: 84px;
+}
+.adaptive-line{
+    display: none;
+}
+.adaptive-button{
+    display: none;
 }
 .info p{
     color:var(--body-text);
@@ -360,7 +369,7 @@ button{
     line-height: 1.5;
 }
 .invites{
-    margin-top:65px;
+    padding-top:65px;
 }
 .invite{
     display: flex;

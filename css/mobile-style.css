@@ -16,16 +16,141 @@
         display: none;
     }
     .header-button button .burger-icon{
-        display: inline;
+        display: block;
     }
     .header-button button{
         font-size:0px;
+        padding: 8px;
     }
     .header-top{
         width: 100vw;
         margin-left: calc(-50vw + 50%); /* Вирівнює по центру */
-        padding: 10px 25px; /* Падінги залишаються */
+        padding: 10px; /* Падінги залишаються */
         box-sizing: border-box;
+        background-color: transparent;
+    }
+    .containers{
+        max-width: 100%;
+        margin:0;
+    }
+    .greetings{
+        max-width: 100%;
+        height: auto;
+    }
+    .greetings h1{
+        font-family: 'GeneralSans-Semibold';
+        font-weight: 600;
+        line-height: 1.2;
+        font-size:42px;
+    }
+    .normal-line{
+        display: none;
+    }
+    .normal-button{
+        display: none;
+    }
+    .adaptive-button{
+        display:block;
+        padding: 15px 30px;
+    }
+    .emergency_info span{
+        font-family: 'GeneralSans-Semibold';
+        letter-spacing: 0.02em;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .adaptive-line{
+        position: absolute;
+        display: block;
+        margin-top:-10px;
+        z-index: -1;
+    }
+    .profile-box{
+        max-width: 100%;
+    }
+    .appointment-buttons{
+        max-width: 100%;
+        height: auto;
+    }
+    .image-container{
+        max-width: 100%;
+        margin-top:40px;
+        
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+    }
+    #doc{
+        bottom:0;
+    }
+    .invite{
+        padding:0;
+        max-width: 100%;
+    }
+    .invite h2{
+        font-family: 'GeneralSans-Semibold';
+        font-size:36px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    .invite-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-image{
+        max-width: 100%;
+        background:transparent;
+        margin-top:30px;
+    }
+    .second-image img{
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .submit-box{
+        max-width: 100%;
+    }
+    .invite{
+        padding:0;
+        max-width: 100%;
+    }
+    .advantages-box{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .third-image{
+        max-width: 100%;
+        margin-top:30px;
+    }
+    .advantages{
+        background-color: var(--light-blue-design);
+    }
+    .third-image img{
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .advantage-info{
+        max-width: 100%;
+    }
+    .advantages-info-box{
+        
+    }
+    .services{
+        background-color: var(--light-blue-design);
+    }
+    .services-box{
+        padding-top:20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .services-item{
+        max-width: 100%;
     }
     .container{
         max-width: 100%;
