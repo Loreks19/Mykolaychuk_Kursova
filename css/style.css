@@ -49,9 +49,11 @@ body{
     margin-top:19px;
     
 }
+
 .nav ul{
     list-style: none;
     display:flex;
+    align-items: center;
 }
 .nav ul li{
     margin: 0 15px;
@@ -69,7 +71,7 @@ body{
 }
 .nav a:hover{
     transform: translateY(-5px);
-    color:var(--mid-blue-design);
+    color:var(--sky-blue-design);
 }
 .header-button{
     display: flex;
@@ -407,7 +409,7 @@ button{
     line-height: 1.5;
     list-style: none;
     padding-left: 30px;
-    background-image: url(/images/Shield-Done.png);
+    background-image: url(../images/Shield-Done.png);
     background-repeat: no-repeat;
     background-position: left center;
     margin-bottom:10px;
@@ -552,7 +554,6 @@ h2{
 .promo-content p{
     padding-bottom:20px;
 }
-
 .promo-content h2 {
     font-family: 'GeneralSans-Semibold';
     font-size:42px;

@@ -8,12 +8,43 @@
     --body-text: #3c4959;
     --stars-color: #EC942C;
 }
-@media(max-width: 430px) {
+@media(max-width: 500px) {
     .containers {
         display: block;
     }
     .header-top nav ul{
-        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right:0;
+        flex-direction: column;
+        background-color: var(--light-blue-design);
+        gap:0px;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+        transition: max-height 0.5s ease;
+        border-radius: 20px;
+    }
+    .burger-svg{
+        fill:currentColor;
+    }
+    .burger-icon{
+        color: var(--dark-blue-design);
+    }
+    .burger-icon:hover{
+        color:var(--sky-blue-design);
+    }
+    #menuList{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-top nav ul li{
+        padding: 20px;
+        width: 100%;
+        border-bottom: 2px solid var(--secondary-color);
+        
     }
     .header-button button .burger-icon{
         display: block;
@@ -21,13 +52,21 @@
     .header-button button{
         font-size:0px;
         padding: 8px;
+        background-color: transparent;
+    }
+    header{
+        background-color: var(--light-blue-design);
+        border-radius: 20px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-top{
-        width: 100vw;
-        margin-left: calc(-50vw + 50%); /* Вирівнює по центру */
         padding: 10px; /* Падінги залишаються */
         box-sizing: border-box;
         background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
     }
     .containers{
         max-width: 100%;
@@ -38,9 +77,11 @@
         height: auto;
     }
     .info{
+        height: auto;
         max-width: 100%;
         margin-bottom:20px;
     }
+    
     .greetings h1{
         font-family: 'GeneralSans-Semibold';
         font-weight: 600;
@@ -76,6 +117,7 @@
     .appointment-buttons{
         max-width: 100%;
         height: auto;
+        
     }
     .image-container{
         max-width: 100%;

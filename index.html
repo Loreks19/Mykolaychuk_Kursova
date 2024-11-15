@@ -22,7 +22,7 @@
                     <img id="a" src="./images/svg_items/Group 1.svg" alt="Uifry Logo">
                 </div>
                 <nav class="nav">
-                    <ul>
+                    <ul id="menuList">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Blogs</a></li>
@@ -32,8 +32,12 @@
                 </nav>
                 <div class="header-button">
                     <img id="elipse" src="./images/elipse.png" width="55" height="55" alt="photo">
-                    <button type="button">
-                        <span class="burger-icon"><img src="./images/burger.png"></span>
+                    <button class="burger-button" type="button">
+                        <span onclick="toggleMenu()" class="burger-icon">
+                            <svg class="burger-svg" width="35" height="35">
+                                <use href="./images/svg_items/burger.defs.svg#icon-Burger"></use>
+                            </svg>
+                        </span>
                         Book Now
                     </button>
                 </div>
@@ -478,6 +482,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
     <script src="./script.js"></script>
+    <script src="./burger-menu.js"></script>
     <script src="./questions.js"></script>
 </body>
 </html>
