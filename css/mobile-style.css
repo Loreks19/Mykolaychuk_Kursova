@@ -44,8 +44,8 @@
         padding: 20px;
         width: 100%;
         border-bottom: 2px solid var(--secondary-color);
-        
     }
+    
     .header-button button .burger-icon{
         display: block;
     }
@@ -122,6 +122,8 @@
     .image-container{
         max-width: 100%;
         margin-top:40px;
+        position: relative;
+        overflow: hidden;
         
     }
     .image-container img{
@@ -129,7 +131,23 @@
         height: auto;
     }
     #doc{
-        bottom:0;
+        bottom: -20px;
+    }
+    .overlay{
+        top:0px;
+        left:20px;
+        right:0px;
+    }
+    .image-container .second-elipse{
+        top:20px;
+        width: 85%;
+        left:50px;
+    }
+    .tooth{
+        top:0px;
+    }
+    .invites{
+        padding-bottom:50px;
     }
     .invite{
         padding:0;
@@ -172,14 +190,16 @@
         display: flex;
         flex-direction: column-reverse;
         height: auto;
+        margin-top:0px;
     }
     .third-image{
         max-width: 100%;
         margin-top:30px;
-        margin-bottom: 80px;
     }
     .advantages{
         background-color: var(--light-blue-design);
+        padding-top:50px;
+        padding-bottom:50px;
     }
     .third-image img{
         width: 100%;
@@ -188,9 +208,6 @@
     }
     .advantage-info{
         max-width: 100%;
-    }
-    .advantages-info-box{
-        margin-top:80px;
     }
     h2{
         font-size:36px;
@@ -219,13 +236,30 @@
         max-width: 100%;
         border-radius: 10px;
     }
+    .block1{
+        padding-top:50px;
+    }
     .box{
         display: block;
+        margin-top:0;
     }
     .left-box{
         max-width: 100%;
     }
-
+    .video-block{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .review-box{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .news{
+        padding-bottom:60px;
+    }
+    .questions{
+        padding-bottom:60px;
+    }
     .services{
         background-color: var(--light-blue-design);
     }

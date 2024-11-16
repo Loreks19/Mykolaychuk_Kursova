@@ -20,7 +20,7 @@
 }
 .slider-box{
     margin-top:30px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     list-style: none;

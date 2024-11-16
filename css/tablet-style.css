@@ -1,0 +1,19 @@
+:root {
+    --dark-blue-design: #011632;
+    --light-blue-design: #e6f6fe;
+    --mid-blue-design: #1376f8;
+    --success: #17bf28;
+    --secondary-color: #FFFFFF;
+    --sky-blue-design: #25b4f8;
+    --body-text: #3c4959;
+    --stars-color: #EC942C;
+}
+
+@media (max-width:768px){
+    .containers{
+        display: block;
+    }
+    .article-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
