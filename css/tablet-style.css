@@ -16,4 +16,7 @@
     .article-list{
         grid-template-columns: repeat(2, 1fr);
     }
+    #image-container{
+        display: block;
+    }
 }

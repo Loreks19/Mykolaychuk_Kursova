@@ -24,7 +24,7 @@ body{
     letter-spacing: 0.015em;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -42,8 +42,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding:35px;
     background-color: #E6F6FE;
     border-radius:10px;
     margin-top:19px;
@@ -71,30 +70,46 @@ body{
 }
 .nav a:hover{
     transform: translateY(-5px);
-    color:var(--sky-blue-design);
+    color:var(--mid-blue-design);
 }
 .header-button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:10px;
+    gap:15px;
 }
 button{
     background-color: var(--mid-blue-design);
-    border:none;
-    border-radius: 5px;
+    border:2px solid var(--mid-blue-design);
+    border-radius: 10px;
     font-weight: 550;
     color:#fff;
     padding: 15px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    border:2px solid var(--mid-blue-design);
+    color:var(--mid-blue-design);
+    transform: scale(1.04);
 }
 .burger-icon{
     display: none;
 }
 .introduce{
   padding-top:40px ;
+  padding-bottom:160px;
+}
+#doc{
+    position: absolute;
+    display: block;
+    right: 40px;
+}
+.image-container{
+    position: relative;
 }
 .containers{
-    max-width: 1400px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -160,10 +175,24 @@ button{
     display: flex;
     flex-direction: column;
 }
-.appointment-buttons img{
-    border:#1376F8 solid 1px;
-    border-radius: 8px;
-    padding: 8.5px 15px;
+.call-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--mid-blue-design);
+    background-color: var(--light-blue-design);
+    width:55px;
+    height: 55px;
+    border-radius: 10px;
+    color:var(--mid-blue-design);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.call-icon{
+    width: 24px;
+    height: 24px;
+}
+.call-box:hover{
+    background-color: var(--secondary-color);
 }
 .emergency_info span{
     color:#1376F8;
@@ -183,14 +212,14 @@ button{
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 374px;
-    height: 117px;
+    padding:5px;
     align-items: center;
 }
 .profile-card {
     display: flex;
     background-color: #ffffff;
-    padding:16px;
     gap: 12px;
+    padding: 16px;
     font-family: Arial, sans-serif;
   }
 .card-info{
@@ -236,19 +265,25 @@ button{
 
   /* Кнопка LinkedIn */
   .linkedin-icon {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     background-color: var(--mid-blue-design); /* Синій колір LinkedIn */
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 3px;
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
     padding: 4px;
   }
+.linkedin-icon:hover{
+    background-color: var(--secondary-color);
+    color:var(--mid-blue-design);
+    border:1.7px solid var(--mid-blue-design);
+    transform: scale(1.2);
+}
 #elipse{
     border-radius: 50%;
 }
@@ -260,38 +295,6 @@ button{
     border-radius: 10px;
     align-items: center;
     gap:35px;
-}
-#doc{
-    display: block;
-    position: relative;
-    bottom:-2px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 3;
-}
-.image-container{
-    position:relative;
-    display: block;
-    margin-right:auto;
-}
-.overlay{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top:0px;
-    left:120px;
-    right: 0;
-    z-index: 1;
-}
-.second-elipse{
-    top:60px;
-}
-.elipse{
-    left:100px;
-}
-.tooth{
-    top:30px;
-    z-index: 2;
 }
 .services-item{
     width: 400px;
@@ -350,25 +353,40 @@ button{
     gap:10px;
 }
 .submit-box form{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 .submit-box{
-    border-radius: 5px;
-    width:422px;
-    height:35px;
+    border-radius: 10px;
+    color: var(--mid-blue-design);
     border: 1px solid #CFCFCF;
+    width: 440px;
+}
+.call-container{
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+}
+.call{
+    width:24px;
+    height: 24px;
+
 }
 #sub-button{
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    width: 117px;
-    height: 45px;
+
 }
 .submit-box input{
-    height:45px;
-    width:100%;
+    flex: 1; /* Автоматичне розширення для заповнення простору */
+    outline: none;
+    border: none;
+    padding: 10px; /* Внутрішній відступ для тексту */
+    background-color: transparent; /* Щоб відповідати стилю */
+    min-width: 0; /* Усуває можливі проблеми із flex */
+    font-size: 20px;
 }
 .submit-box input::placeholder{
     color:#CFCFCF;
@@ -377,7 +395,6 @@ button{
     line-height: 1.5;
     letter-spacing: 0.015em;
     font-size:16px;
-    padding-left:10px;
 }
 .invite h2{
     color: var(--dark-blue-design);

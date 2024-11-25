@@ -60,7 +60,11 @@
                     <div class="appointment-buttons">
                         <button class="normal-button" type="button">Book an appointment</button>
                         <button class="adaptive-button" type="button">Get Started</button>
-                        <img src="./images/call.jpg" alt="icon">
+                        <div class="call-box">
+                            <svg class="call-icon" >
+                                <use href="./images/svg_items/calling.svg#icon-Calling"></use>
+                            </svg>
+                        </div>
                         <div class="emergency_info">
                             <span>Dental 24H Emergency</span>
                             <a href="tel:090076401">0900-76401</a>
@@ -81,10 +85,7 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img id="doc" src="./images/Female.png" width="675" height="676" alt="Doctor">
-                    <img class="overlay tooth" src="./images/teeths.png">
-                    <img class="overlay elipse" src="./images/colo.png">
-                    <img class="overlay second-elipse" src="./images/colo1.png">
+                    <img id="doc" src="./images/Doctor.png" width="767" height="676" alt="Doctor">
                 </div>
             </div>
         </section>
@@ -141,7 +142,12 @@
                         <p>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
                         <div class="submit-box">
                             <form>
-                                <input type="tel" name="phone" placeholder="Enter your Phone Number" required>
+                                <div class="call-container">
+                                    <svg class="call">
+                                        <use href="./images/svg_items/calling.svg#icon-Calling"></use>
+                                    </svg>
+                                    <input type="tel" name="phone" placeholder="Enter your Phone Number" required>
+                                </div>
                                 <button id="sub-button"type="submit">Submit</button>
                             </form>
                         </div>

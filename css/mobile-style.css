@@ -35,6 +35,12 @@
     .burger-icon:hover{
         color:var(--sky-blue-design);
     }
+    .burger-button:hover{
+        border: none;
+    }
+    .burger-button{
+        border:none;
+    }
     #menuList{
         width: 95%;
         margin-left: auto;
@@ -130,8 +136,12 @@
         width: 100%;
         height: auto;
     }
+    .introduce{
+        padding-bottom:0px;
+    }
     #doc{
-        bottom: -20px;
+        position: static;
+        display: block;
     }
     .overlay{
         top:0px;
@@ -174,7 +184,10 @@
         height: auto;
     }
     .submit-box{
-        max-width: 100%;
+        width: 100%;
+    }
+    .submit-box input{
+        font-size: clamp(2px, 2.5vw, 20px);
     }
     .card-info{
         max-width: 100%;
@@ -357,6 +370,7 @@
     .burger-but{
         display:block;
         background-color: transparent;
+        
     }
     .footer-box{
         align-items: center;
