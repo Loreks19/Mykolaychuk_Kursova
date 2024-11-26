@@ -1,15 +1,16 @@
 /* Базовий стиль для списку */
-.questions{
-    padding-bottom:100px;
+.questions {
+    padding-bottom: 100px;
 }
+
 .faq-list {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
     border-radius: 5px;
     list-style-type: none;
     padding-left: 0;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 /* Стиль кожного пункту FAQ */
@@ -19,11 +20,13 @@
     border-bottom: 1px solid #CFCFCF;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-     /* Чорна лінія між елементами */
+    transition: background-color 0.8s ease, padding 0.8s ease; 
 }
-.faq-item:last-child{
+
+.faq-item:last-child {
     border-bottom: none;
 }
+
 /* Питання */
 .question {
     display: flex;
@@ -32,7 +35,7 @@
     padding: 30px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+    transition: background-color 1s ease, color 0.8s ease, padding 0.7s ease;
     position: relative;
 }
 
@@ -43,7 +46,8 @@
     color: inherit;
     margin: 0;
 }
-.title{
+
+.title {
     font-family: 'GeneralSans-Medium';
     font-weight: 500;
     font-size: 18px;
@@ -51,6 +55,7 @@
     letter-spacing: 0.015em;
     line-height: 1.5;
 }
+
 /* Крапка перед питанням */
 .question .title::before {
     content: "•";
@@ -66,14 +71,12 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #fff;
-    padding-left: 20px;
-     /* Відступ для візуальної відповідності */
+    padding-left: 20px; /* Відступ для візуальної відповідності */
 }
 
 /* Крапка змінює колір на білий при активності */
 .faq-item.active .question .title::before {
     color: #fff;
-    
 }
 
 /* Додаємо білу лінію під активним питанням */
@@ -85,15 +88,10 @@
     width: 100%;
     height: 1px;
     background-color: #fff;
-    
 }
-
-/* Значок розгортання */
-.expand-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s;
-    fill: currentColor;
+.expand-icon{
+    min-width: 24px;
+    min-height: 24px;
 }
 
 .faq-item.active .expand-icon {
@@ -104,12 +102,18 @@
 .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    opacity: 0; /* Спочатку приховуємо текст */
+    visibility: hidden; /* Приховуємо елемент */
+    transition:  all 0.8s, opacity 0.6s, max-height 0.6s, visibility  0.3s; /* Плавне закриття */
     background-color: #e9ecef;
+    padding: 0px 20px;
 }
 
+/* Коли елемент активний, показуємо відповідь */
 .faq-item.active .answer {
     max-height: 300px; /* Достатньо для показу тексту */
+    opacity: 1; /* Робимо елемент видимим */
+    visibility: visible; /* Змінюємо видимість на "visible" */
     padding: 15px 20px;
     background-color: #007bff;
     color: #fff;
@@ -117,10 +121,13 @@
     border-bottom-right-radius: 8px;
     
 }
-.faq-item.active{
+
+.faq-item.active {
     border-bottom: none;
 }
 
+
+/* Стиль для прихованого контенту */
 .hidden-content {
     margin: 0;
     font-size: 0.9em;

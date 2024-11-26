@@ -33,7 +33,7 @@
         color: var(--dark-blue-design);
     }
     .burger-icon:hover{
-        color:var(--sky-blue-design);
+        color:var(--mid-blue-design);
     }
     .burger-button:hover{
         border: none;
@@ -275,6 +275,14 @@
     }
     .services{
         background-color: var(--light-blue-design);
+    }
+    .title {
+        font-family: 'GeneralSans-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        font-style: normal;
+        letter-spacing: 0.015em;
+        line-height: 1.5;
     }
     .services-box{
         padding-top:20px;
