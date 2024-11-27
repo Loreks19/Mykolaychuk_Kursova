@@ -288,13 +288,14 @@ button:hover{
     border-radius: 50%;
 }
 .services-box{
-    height:400px;
     display: flex;
     justify-content: center;
     background-color: var(--light-blue-design);
     border-radius: 10px;
     align-items: center;
     gap:35px;
+    height: auto;
+    padding: 25px;
 }
 .services-item{
     width: 400px;
@@ -456,8 +457,10 @@ button:hover{
     margin-bottom:10px;
     
 }
+.advantages{
+    padding-top:64px;
+}
 .advantages-box{
-    margin-top:125px;
     background-color: var(--light-blue-design);
     display: flex;
     justify-content: space-around;

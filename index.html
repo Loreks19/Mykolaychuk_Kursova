@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/mobile-style.css">
     <link rel="stylesheet" href="./css/tablet-style.css">
+    <link rel="stylesheet" href="./css/appointment-menu.css">
+    <link rel="stylesheet" href="./css/notebook-style.css">
     <link rel="icon" href="./images/Icon.jpg" type="image/jpg">
     <title>Uifry</title>
 </head>
@@ -24,11 +26,11 @@
                 </div>
                 <nav class="nav">
                     <ul id="menuList">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a onclick="scrollToSection('feature')" href="#">Home</a></li>
+                        <li><a onclick="scrollToSection('services-id')" href="#">Services</a></li>
+                        <li><a onclick="scrollToSection('news-id')" href="#">Blogs</a></li>
+                        <li><a onclick="scrollToSection('faq-id')" href="#">About</a></li>
+                        <li><a onclick="scrollToSection('contact-id')" href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-button">
@@ -58,8 +60,8 @@
                         <p>We use only the best quality materials on the market in order to provide the best products to our patiens, So don't worry about anything and book yourself.</p>
                     </div>
                     <div class="appointment-buttons">
-                        <button class="normal-button" type="button">Book an appointment</button>
-                        <button class="adaptive-button" type="button">Get Started</button>
+                        <button  class="normal-button" type="button">Book an appointment</button>
+                        <button  class="adaptive-button normal-button" type="button">Get Started</button>
                         <div class="call-box">
                             <svg class="call-icon" >
                                 <use href="./images/svg_items/calling.svg#icon-Calling"></use>
@@ -68,6 +70,20 @@
                         <div class="emergency_info">
                             <span>Dental 24H Emergency</span>
                             <a href="tel:090076401">0900-76401</a>
+                        </div>
+                    </div>
+                    <div id="auth-modal" class="modal" style="display: none;">
+                        <div class="modal-content">
+                            <span id="close-modal" class="close-btn">&times;</span>
+                            <h2 class="modal-title">Request Appointment</h2>
+                            <form id="auth-form" class="auth-form">
+                                <input type="text" id="full-name" placeholder="Full Name" class="form-input" required>
+                                <small class="error-message" id="name-error"></small>
+                                <input type="text" id="phone-number" placeholder="Phone Number" class="form-input" required>
+                                <small class="error-message" id="phone-error"></small>
+                                <input type="email" id="email-address" placeholder="Email Address" class="form-input" required>
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </form>
                         </div>
                     </div>
                     <div class="profile-box">
@@ -89,12 +105,12 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services-id" class="services">
             <div class="container">
                 <div class="services-box">
                     <div class="services-item">
                         <div class="icon-box">
-                            <svg class="icon" width="50" height="50">
+                            <svg class="icon" width="48" height="48">
                                 <use href="./images/svg_items/symbol-defs.svg#icon-Teeth"></use>
                             </svg>
                         </div>
@@ -192,7 +208,7 @@
                         </div>
                         <button id="app-button">Book an appointment</button>
                     </div>
-                    <div class="second-image">
+                    <div class="second-image" id="smile">
                         <img src="./images/smile-image.jpg">
                     </div>
                 </div>
@@ -214,20 +230,65 @@
             <div class="container">
                 <h2 id="center-h">Meet our specialists</h2>
                 <p id="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
-                <div class="slider">
-                    <div class="slider-line"></div>
+                <div class="slider-box-team">
+                <div class="slider-container-team swiper-team">
+                    <div class="card-wrapper-team">
+                        <ul class="card-list-team swiper-wrapper">
+                            <li class="card-item-team swiper-slide">
+                                <div class="member-box">
+                                    <img src="./images/indian.jpg" alt="doctor" class="doctor-img">
+                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <div class="overlay-info">
+                                        <h4>Jim Carry</h4>
+                                        <p>Orthodontist.</p>
+                                    </div>
+                                </div>                                
+                            </li>
+                            <li class="card-item-team swiper-slide">
+                                <div class="member-box">
+                                    <img src="./images/europian.jpg" alt="doctor" class="doctor-img">
+                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <div class="overlay-info">
+                                        <h4>Wade Warren</h4>
+                                        <p>Endodontist.</p>
+                                    </div>
+                                </div>  
+                            </li>
+                            <li class="card-item-team swiper-slide">
+                                <div class="member-box">
+                                    <img src="./images/woman.jpg" alt="doctor" class="doctor-img">
+                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <div class="overlay-info">
+                                        <h4>Jenny Wilson</h4>
+                                        <p>Periodontist.</p>
+                                    </div>
+                                </div>  
+                            </li>
+                            <li class="card-item-team swiper-slide">
+                                <div class="member-box">
+                                    <img src="./images/man.jpg" alt="doctor" class="doctor-img">
+                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <div class="overlay-info">
+                                        <h4>Jacob Jones</h4>
+                                        <p>Pediatric Dentist.</p>
+                                    </div>
+                                </div>  
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="slider-button">
-                    <button class="prev-button">
-                        <svg class="arrows" width="40" height="40">
+                <div class="slider-buttons-team">
+                    <div class="s-button-prev-team">
+                        <svg class="arrows" width="40" height="20">
                             <use href="./images/svg_items/social-defs.svg#icon-Arrow-Left"></use>
                         </svg>
-                    </button>
-                    <button class="next-button">
-                        <svg class="arrows"  width="40" height="40">
+                    </div>
+                    <div class="s-button-next-team">
+                        <svg class="arrows"  width="40" height="20">
                             <use href="./images/svg_items/social-defs.svg#icon-Arrow-Right"></use>
                         </svg>
-                    </button>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -314,7 +375,7 @@
             </div>
             </div>
         </section>
-        <section class="news">
+        <section id="news-id" class="news">
             <div class="container">
                 <h2>News & Article</h2>
                 <p>We use only the best quality materials on the market in<br> order to provide the best products to our patients.</p>
@@ -382,7 +443,7 @@
                 <button class="center-but" type="button">Check out more</button>
             </div>
         </section>
-        <section class="questions">
+        <section id="faq-id" class="questions">
             <div class="container">
                 <h2 id="center-h">Frequently Ask Question</h2>
                 <p id="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
@@ -449,7 +510,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact-id">
         <div class="container">
             <div class="footer-box">
                 <div class="logo">
@@ -457,14 +518,14 @@
                 </div>
                 <nav class="nav-footer">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a onclick="scrollToSection('feature')" href="#">Home</a></li>
+                        <li><a onclick="scrollToSection('services-id')" >Services</a></li>
+                        <li><a onclick="scrollToSection('news-id')" >Blogs</a></li>
+                        <li><a onclick="scrollToSection('faq-id')" >About</a></li>
+                        <li><a onclick="scrollToSection('contact-id')" >Contact</a></li>
                     </ul>
                 </nav>
-                <button class="burger-but" type="button"><img src="./images/burger-menu.jpg"></button>
+                <button class="burger-but" type="button"><a href="index.html"><img src="./images/burger-menu.jpg"></a></button>
             </div>
             <div class="line"></div>
             <div class="social-icons">
@@ -494,5 +555,14 @@
     <script src="./script.js"></script>
     <script src="./burger-menu.js"></script>
     <script src="./questions.js"></script>
+    <script src="./login.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>

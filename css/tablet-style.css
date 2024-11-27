@@ -9,14 +9,235 @@
     --stars-color: #EC942C;
 }
 
-@media (max-width:768px){
+@media (max-width:1000px){
     .containers{
         display: block;
     }
     .article-list{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .article-box{
+        display: block;
+
+    }
+    .article-list .article-item{
+        max-width: 100%;
+        height: auto;
+    }
+    .article-item img{
+        width: 100%;
     }
     #image-container{
         display: block;
     }
+    .promo-block{
+        width: 100%;
+        justify-content: center;
+    }
+    .promo-content h2{
+        font-size: 32px;
+    }
+    .promo-content p{
+        font-size:14px;
+    }
+    .promo-content{
+
+        width: 100%;
+    }
+    .header-top nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right:0;
+        flex-direction: column;
+        background-color: var(--light-blue-design);
+        gap:0px;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+        transition: max-height 0.5s ease;
+        border-radius: 20px;
+    }
+    .burger-svg{
+        fill:currentColor;
+    }
+    .burger-icon{
+        color: var(--dark-blue-design);
+    }
+    .burger-icon:hover{
+        color:var(--mid-blue-design);
+    }
+    .burger-button:hover{
+        border: none;
+    }
+    .burger-button{
+        border:none;
+    }
+    #menuList{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-top nav ul li{
+        padding: 20px;
+        width: 100%;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+    
+    .header-button button .burger-icon{
+        display: block;
+    }
+    .header-button button{
+        font-size:0px;
+        padding: 8px;
+        background-color: transparent;
+    }
+    header{
+        background-color: var(--light-blue-design);
+        border-radius: 20px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-top{
+        padding: 10px; /* Падінги залишаються */
+        box-sizing: border-box;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #elipse{
+        display: none;
+    }
+    .image-container{
+        max-width: 100%;
+        margin-top:50px;
+    }
+    .introduce{
+        padding-bottom: 0;
+    }
+    #doc{
+        position: static;
+        width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .profile-box{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .appointment-buttons{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        gap:30px;
+    }
+    .info{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .greetings{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .greetings h1{
+        font-size:46px;
+    }
+    .normal-line{
+        right: 180px;
+        width: 52%;
+    }
+    .services-box{
+        gap:15px;
+        height: auto;
+        padding: 25px;
+    }
+    .services-item h4{
+        font-size:20px;
+    
+    }
+    .services-item p{
+        font-size:15px;
+    }
+    .invite{
+        width: 350px;
+        padding: 0;
+    }
+    .invite h2{
+        font-size:36px;
+    }
+    .invite p{
+        font-size:16px;
+    }
+    .invite-box{
+        width: 100%;
+        align-items: center;
+    }
+    .second-image{
+        width: 40%;
+        height: 50%;
+        align-items: center;
+    }
+    .second-image img{
+        width:100%;
+        height: auto;
+    }
+    .submit-box{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    .third-image img{
+        width:350px;
+        height: auto;
+    }
+    .advantages-box{
+        border-radius: 10px;
+    }
+    .advantages-info-box h2{
+        font-size:25px;
+    }
+    .advantages-info-box p{
+        font-size:16px;
+    }
+    .advantages-list li{
+        font-size:16px;
+    }
+    .advantages-info-box{
+        margin-bottom: 5px;
+    }
+    .advantages-box{
+        gap:15px;
+        height: auto;
+        padding: 20px;
+    }
+    .header-box{
+        width: 350px;
+        padding: 0;
+    }
+    .header-box h2{
+        font-size:36px;
+    }
+    .header-box p{
+        font-size:16px;
+    }
+    #smile{
+        width:400px;
+    }
+    .box{
+        padding:25px;
+    }
+    .video{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    
 }

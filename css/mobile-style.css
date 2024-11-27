@@ -8,7 +8,7 @@
     --body-text: #3c4959;
     --stars-color: #EC942C;
 }
-@media(max-width: 500px) {
+@media(max-width: 768px) {
     .containers {
         display: block;
     }
@@ -87,12 +87,16 @@
         max-width: 100%;
         margin-bottom:20px;
     }
+    .info p{
+        text-align: start;
+    }
     
     .greetings h1{
         font-family: 'GeneralSans-Semibold';
         font-weight: 600;
         line-height: 1.2;
-        font-size:42px;
+        font-size:46px;
+        text-align: start;
     }
     .normal-line{
         display: none;
@@ -136,6 +140,9 @@
         width: 100%;
         height: auto;
     }
+    .swiper{
+        margin-bottom: 50px;
+    }
     .introduce{
         padding-bottom:0px;
     }
@@ -174,7 +181,7 @@
         flex-direction: column;
     }
     .second-image{
-        max-width: 100%;
+        width: 100% !important;
         background:transparent;
         margin-top:30px;
     }
@@ -206,7 +213,7 @@
         margin-top:0px;
     }
     .third-image{
-        max-width: 100%;
+        width: 100% ;
         margin-top:30px;
     }
     .advantages{
@@ -215,7 +222,7 @@
         padding-bottom:50px;
     }
     .third-image img{
-        width: 100%;
+        width: 100% !important;
         position: static;
         height: auto;
     }
@@ -244,7 +251,9 @@
         margin:0;
         text-align: start;
     }
-
+    .header-box{
+        width: 100% !important;
+    }
     .video iframe{
         max-width: 100%;
         border-radius: 10px;
@@ -378,9 +387,17 @@
     .burger-but{
         display:block;
         background-color: transparent;
+        border:none;
         
     }
     .footer-box{
         align-items: center;
+    }
+    .burger-but:hover{
+        border:none;
+        transform: scale(1.0);
+    }
+    .modal-content{
+        max-width: 100%;
     }
 }
