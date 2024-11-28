@@ -13,20 +13,6 @@
     .containers{
         display: block;
     }
-    .article-list{
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-    .article-box{
-        display: block;
-
-    }
-    .article-list .article-item{
-        max-width: 100%;
-        height: auto;
-    }
-    .article-item img{
-        width: 100%;
-    }
     #image-container{
         display: block;
     }
@@ -35,7 +21,7 @@
         justify-content: center;
     }
     .promo-content h2{
-        font-size: 32px;
+        font-size: 28px;
     }
     .promo-content p{
         font-size:14px;
@@ -118,7 +104,7 @@
     }
     #doc{
         position: static;
-        width: 90%;
+        width: 90% !important;
         height: auto;
         margin-right: auto;
         margin-left: auto;
@@ -146,11 +132,14 @@
         text-align: center;
     }
     .greetings h1{
-        font-size:46px;
+        font-size:46px !important;
     }
     .normal-line{
         right: 180px;
         width: 52%;
+    }
+    .services{
+        padding-top: 0px;
     }
     .services-box{
         gap:15px;
@@ -231,7 +220,7 @@
         width:400px;
     }
     .box{
-        padding:25px;
+        padding:20px;
     }
     .video{
         width: 100%;

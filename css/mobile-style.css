@@ -8,7 +8,7 @@
     --body-text: #3c4959;
     --stars-color: #EC942C;
 }
-@media(max-width: 768px) {
+@media(max-width: 600px) {
     .containers {
         display: block;
     }
@@ -141,7 +141,7 @@
         height: auto;
     }
     .swiper{
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     .introduce{
         padding-bottom:0px;
@@ -204,13 +204,14 @@
     }
     .invite{
         padding:0;
-        max-width: 100%;
+        width: 100% !important;
     }
     .advantages-box{
         display: flex;
         flex-direction: column-reverse;
         height: auto;
         margin-top:0px;
+        padding: 0px !important;
     }
     .third-image{
         width: 100% ;
@@ -264,6 +265,7 @@
     .box{
         display: block;
         margin-top:0;
+        padding:0 !important;
     }
     .left-box{
         max-width: 100%;
@@ -282,9 +284,6 @@
     .questions{
         padding-bottom:60px;
     }
-    .services{
-        background-color: var(--light-blue-design);
-    }
     .title {
         font-family: 'GeneralSans-Medium';
         font-weight: 500;
@@ -293,38 +292,12 @@
         letter-spacing: 0.015em;
         line-height: 1.5;
     }
-    .services-box{
-        padding-top:20px;
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .services-item{
-        max-width: 100%;
-    }
     .container{
         max-width: 100%;
         margin:0;
     }
     #elipse{
         display: none;
-    }
-    .article-box{
-        display: block;
-
-    }
-
-    .article-list{
-        display: flex;
-        flex-direction: column;
-    }
-    .article-list .article-item{
-        max-width: 100%;
-        height: auto;
-    }
-    .article-item img{
-        width: 100%;
     }
     .promo-block{
         display: block;

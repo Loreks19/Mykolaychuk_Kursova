@@ -1,16 +1,31 @@
 @media(max-width: 1280px) {
-    .article-list{
-        grid-template-columns: repeat(3, 1fr);
+    .video{
+        width: 100%;
     }
-    .article-box{
-        display: block;
+    iframe{
+        width: 100%;
+    }
+    .promo-block{
+        width: 90%;
+        justify-content: center;
+    }
+    .promo-content{
 
-    }
-    .article-list .article-item{
-        max-width: 100%;
-        height: auto;
-    }
-    .article-item img{
         width: 100%;
     }
 }
+@media (max-width: 1320px) {
+    .greetings h1{
+        font-size: 56px;
+    }
+    .greetings .normal-line{
+        margin-left:70px;
+    }
+  }
+  @media (max-width: 1200px) {
+    #doc{
+        width: 550px;
+        height: auto;
+        top:100px;
+    }
+  }

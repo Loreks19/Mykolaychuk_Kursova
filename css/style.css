@@ -98,7 +98,11 @@ button:hover{
 }
 .introduce{
   padding-top:40px ;
-  padding-bottom:160px;
+}
+.services{
+    padding-top:60px;
+    position: relative;
+    z-index: 2;
 }
 #doc{
     position: absolute;
@@ -107,6 +111,9 @@ button:hover{
 }
 .image-container{
     position: relative;
+    display: block;
+    height: 100%;
+    z-index: 1;
 }
 .containers{
     max-width: 1440px;
@@ -623,7 +630,9 @@ h2{
     height: auto;
     border-radius: 12px;
 }
-
+nav {
+    align-self: center;
+}
 .nav-footer ul{
     list-style: none;
     display:flex;
