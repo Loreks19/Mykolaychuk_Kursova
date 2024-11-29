@@ -723,7 +723,11 @@ nav {
 .burger-but{
     display: none;
 }
-
-/* 1024 */
-
-/* 1440 */
+br{
+    display: none;
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+    br {
+      display: inline;
+    }
+  }

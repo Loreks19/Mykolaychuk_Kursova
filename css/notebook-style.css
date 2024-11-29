@@ -1,19 +1,3 @@
-@media(max-width: 1280px) {
-    .video{
-        width: 100%;
-    }
-    iframe{
-        width: 100%;
-    }
-    .promo-block{
-        width: 90%;
-        justify-content: center;
-    }
-    .promo-content{
-
-        width: 100%;
-    }
-}
 @media (max-width: 1320px) {
     .greetings h1{
         font-size: 56px;
@@ -27,5 +11,19 @@
         width: 550px;
         height: auto;
         top:100px;
+    }
+    .video{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .promo-block{
+        width: 90%;
+        justify-content: center;
+    }
+    .promo-content{
+
+        width: 100%;
     }
   }

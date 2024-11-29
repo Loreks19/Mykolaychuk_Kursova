@@ -101,6 +101,12 @@
     .normal-line{
         display: none;
     }
+    .adaptive-line{
+        position: absolute;
+        display: block;
+        margin-top:-10px;
+        z-index: -1;
+    }
     .normal-button{
         display: none;
     }
@@ -114,12 +120,6 @@
         font-size: 14px;
         line-height: 1.5;
         font-weight: 600;
-    }
-    .adaptive-line{
-        position: absolute;
-        display: block;
-        margin-top:-10px;
-        z-index: -1;
     }
     .profile-box{
         max-width: 100%;
@@ -239,7 +239,7 @@
 
     }
     #center-h{
-        font-size:36px;
+        font-size:34px;
         font-weight: 600;
         line-height: 1.2;
         font-family: 'GeneralSans-Semibold';
