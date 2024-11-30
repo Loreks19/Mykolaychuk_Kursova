@@ -30,6 +30,9 @@
 
         width: 100%;
     }
+    #adaptive-text{
+        font-size: 18px;
+    }
     .header-top nav ul{
         position: absolute;
         top: 90px;
@@ -183,7 +186,7 @@
         width: 100%;
     }
     .third-image img{
-        width:350px;
+        width:300px;
         height: auto;
     }
     .advantages-box{

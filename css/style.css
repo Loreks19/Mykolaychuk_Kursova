@@ -314,6 +314,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap:15px;
+    padding: 15px;
 }
 .services-item h4{
     font-family: 'GeneralSans-Medium';
@@ -499,7 +500,7 @@ button:hover{
 .left-box{
     width:555px;
 }
-#center-h{
+.center-h{
     margin-left: auto;
     margin-right: auto;
     max-width: 629px;
@@ -555,7 +556,7 @@ h2{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-#center-p-b2{
+.center-p-b2{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -567,7 +568,7 @@ h2{
     letter-spacing: 0.015em;
     line-height: 1.5;
 }
-#center-p{
+.center-p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -602,9 +603,6 @@ h2{
 .promo-content {
     max-width: 60%;
 }
-.promo-content p{
-    padding-bottom:20px;
-}
 .promo-content h2 {
     font-family: 'GeneralSans-Semibold';
     font-size:42px;
@@ -619,8 +617,8 @@ h2{
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin-bottom: 40px;
     letter-spacing: 0.015em;
-    margin-bottom: 20px;
     color: var(--secondary-color); /* Світло-сірий текст */
 }
 

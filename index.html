@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/tablet-style.css">
     <link rel="stylesheet" href="./css/appointment-menu.css">
     <link rel="stylesheet" href="./css/notebook-style.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="icon" href="./images/Icon.jpg" type="image/jpg">
     <title>Uifry</title>
 </head>
@@ -22,7 +23,7 @@
         <div class="container">
             <div class="header-top">
                 <div class="logo">
-                    <img id="a" src="./images/svg_items/Group 1.svg" alt="Uifry Logo">
+                    <img src="./images/svg_items/Group_1.svg" alt="Uifry Logo">
                 </div>
                 <nav class="nav">
                     <ul id="menuList">
@@ -114,11 +115,11 @@
                                 <use href="./images/svg_items/symbol-defs.svg#icon-Teeth"></use>
                             </svg>
                         </div>
-                        <h4>Root Canal Treatment</h4>
-                        <p>Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.</p>
+                        <h4 id="adaptive-text">Root Canal Treatment</h4>
+                        <p>Root canal treatment is a dental procedure used to treat infection at the centre of a tooth.</p>
                         <div class="learn-info">
                             <a href="#">Learn more</a>
-                            <img src="./images/arrow.jpg">
+                            <img src="./images/arrow.jpg" alt="arrow">
                         </div>
                     </div>
                     <div class="services-item">
@@ -131,7 +132,7 @@
                         <p>Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile.</p>
                         <div class="learn-info">
                             <a href="#">Learn more</a>
-                            <img src="./images/arrow.jpg">
+                            <img src="./images/arrow.jpg" alt="arrow">
                         </div>
                     </div>
                     <div class="services-item">
@@ -144,7 +145,7 @@
                         <p>A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge.</p>
                         <div class="learn-info">
                             <a href="#">Learn more</a>
-                            <img src="./images/arrow.jpg">
+                            <img src="./images/arrow.jpg" alt="arrow">
                         </div>
                     </div>
                 </div>
@@ -164,7 +165,7 @@
                                     </svg>
                                     <input type="tel" name="phone" placeholder="Enter your Phone Number" required>
                                 </div>
-                                <button id="sub-button"type="submit">Submit</button>
+                                <button id="sub-button" type="submit">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -206,10 +207,10 @@
                             <h2>Leave your worries at the door and enjoy a Healthier, more precise smile</h2>
                             <p>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
                         </div>
-                        <button id="app-button">Book an appointment</button>
+                        <button type="button">Book an appointment</button>
                     </div>
                     <div class="second-image" id="smile">
-                        <img src="./images/smile-image.jpg">
+                        <img src="./images/smile-image.jpg" alt="smile">
                     </div>
                 </div>
             </div>
@@ -217,19 +218,19 @@
         <section class="video-block">
             <div class="container">
                 <div class="video-box">
-                        <h2 id="center-h">We’re welcoming new patients and can’t wait to meet you.</h2>
-                        <p id="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                        <h2 class="center-h">We’re welcoming new patients and can’t wait to meet you.</h2>
+                        <p class="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                     <div class="video">
                         <iframe width="1064" height="452" src="https://www.youtube.com/embed/LXX5nJqrBFk?si=owNfU2Lw1P7Ww0jR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <a href="https://www.youtube.com/@DoctorMike"><button type="button">Watch Playlist</button></a>
+                    <button onclick="window.location.href='https://www.youtube.com/@DoctorMike';">Watch Playlist</button>
                 </div>
             </div>
         </section>
         <section class="team-block">
             <div class="container">
-                <h2 id="center-h">Meet our specialists</h2>
-                <p id="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <h2 class="center-h">Meet our specialists</h2>
+                <p class="center-p">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 <div class="slider-box-team">
                 <div class="slider-container-team swiper-team">
                     <div class="card-wrapper-team">
@@ -237,7 +238,7 @@
                             <li class="card-item-team swiper-slide">
                                 <div class="member-box">
                                     <img src="./images/indian.jpg" alt="doctor" class="doctor-img">
-                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <img src="./images/Linkedin.png" alt="linkedin" class="overlay-image">
                                     <div class="overlay-info">
                                         <h4>Jim Carry</h4>
                                         <p>Orthodontist.</p>
@@ -247,7 +248,7 @@
                             <li class="card-item-team swiper-slide">
                                 <div class="member-box">
                                     <img src="./images/europian.jpg" alt="doctor" class="doctor-img">
-                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <img src="./images/Linkedin.png" alt="linkedin" class="overlay-image">
                                     <div class="overlay-info">
                                         <h4>Wade Warren</h4>
                                         <p>Endodontist.</p>
@@ -257,7 +258,7 @@
                             <li class="card-item-team swiper-slide">
                                 <div class="member-box">
                                     <img src="./images/woman.jpg" alt="doctor" class="doctor-img">
-                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <img src="./images/Linkedin.png" alt="linkedin" class="overlay-image">
                                     <div class="overlay-info">
                                         <h4>Jenny Wilson</h4>
                                         <p>Periodontist.</p>
@@ -267,7 +268,7 @@
                             <li class="card-item-team swiper-slide">
                                 <div class="member-box">
                                     <img src="./images/man.jpg" alt="doctor" class="doctor-img">
-                                    <img src="./images/Linkedin.png" class="overlay-image">
+                                    <img src="./images/Linkedin.png" alt="linkedin" class="overlay-image">
                                     <div class="overlay-info">
                                         <h4>Jacob Jones</h4>
                                         <p>Pediatric Dentist.</p>
@@ -294,8 +295,8 @@
         </section>
         <section class="review-box">
             <div class="container">
-                <h2 id="center-h">Our Happy Clients</h2>
-                <p id="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <h2 class="center-h">Our Happy Clients</h2>
+                <p class="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 <div class="slider-box">
                 <div class="slider-container swiper">
                     <div class="card-wrapper">
@@ -385,58 +386,58 @@
                         <li class="article-item">
                             <img src="./images/1.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/2-2.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/3-3.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/4.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/5.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/6.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/7.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                         <li class="article-item">
                             <img src="./images/8.jpg" alt="photo">
                             <a href="#">Self Care</a>
-                            <p id="introduce">Care of your Teeth</p>
+                            <p class="activity">Care of your Teeth</p>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <p id="name">~Anita Jackson</p>
+                            <p class="name">~Anita Jackson</p>
                         </li>
                     </ul>
                 </div>
@@ -445,8 +446,8 @@
         </section>
         <section id="faq-id" class="questions">
             <div class="container">
-                <h2 id="center-h">Frequently Ask Question</h2>
-                <p id="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+                <h2 class="center-h">Frequently Ask Question</h2>
+                <p class="center-p-b2">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 <ul class="faq-list">
                     <li class="faq-item">
                         <div class="question">
@@ -514,7 +515,7 @@
         <div class="container">
             <div class="footer-box">
                 <div class="logo">
-                    <img id="a"src="./images/logo.jpg">
+                    <img src="./images/logo.jpg" alt="logo">
                 </div>
                 <nav class="nav-footer">
                     <ul>
@@ -525,7 +526,7 @@
                         <li><a onclick="scrollToSection('contact-id')" >Contact</a></li>
                     </ul>
                 </nav>
-                <button class="burger-but" type="button"><a href="index.html"><img src="./images/burger-menu.jpg"></a></button>
+                <button class="burger-but" type="button"><a href="index.html"><img src="./images/burger-menu.jpg" alt="burger menu"></a></button>
             </div>
             <div class="line"></div>
             <div class="social-icons">
@@ -551,18 +552,10 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./slider.js"></script>
-    <script src="./script.js"></script>
-    <script src="./burger-menu.js"></script>
-    <script src="./questions.js"></script>
-    <script src="./login.js"></script>
-    <script>
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

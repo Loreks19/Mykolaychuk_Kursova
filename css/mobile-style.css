@@ -172,7 +172,7 @@
     }
     .invite h2{
         font-family: 'GeneralSans-Semibold';
-        font-size:36px;
+        font-size:34px !important;
         font-weight: 600;
         line-height: 1.2;
     }
@@ -210,8 +210,12 @@
         display: flex;
         flex-direction: column-reverse;
         height: auto;
+        align-items: start;
         margin-top:0px;
         padding: 0px !important;
+    }
+    .advantages-info-box h2{
+        font-size: 34px !important;
     }
     .third-image{
         width: 100% ;
@@ -238,7 +242,7 @@
         text-transform: capitalize;
 
     }
-    #center-h{
+    .center-h{
         font-size:34px;
         font-weight: 600;
         line-height: 1.2;
@@ -248,12 +252,15 @@
         text-transform: capitalize;
         margin-bottom: 20px;
     }
-    #center-p{
+    .center-p{
         margin:0;
         text-align: start;
     }
     .header-box{
         width: 100% !important;
+    }
+    .header-box h2{
+        font-size: 34px !important;
     }
     .video iframe{
         max-width: 100%;
@@ -338,7 +345,7 @@
     .slider-buttons{
         margin-top:0;
     }
-    #center-p-b2{
+    .center-p-b2{
         text-align: start;
         margin:0;
     }
